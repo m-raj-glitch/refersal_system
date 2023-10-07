@@ -1,0 +1,26 @@
+<!-- views/register.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="C:\Users\madhu\Desktop\passport-auth-login\public\main.css"> <!-- Include the CSS file -->
+</head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <% if (message) { %>
+      <p class="error"><%= message %></p>
+    <% } %>
+    <form method="POST" action="/register">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="/login">Login</a></p>
+  </div>
+</body>
+</html>

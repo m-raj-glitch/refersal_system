@@ -1,0 +1,114 @@
+/* public/styles.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Background color for all pages */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container styles */
+  .container {
+    background-color: #fff; /* Background color for the content container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  h1 {
+    color: #333; /* Heading text color */
+  }
+  
+  /* Form styles */
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; /* Label text color */
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  
+  /* Link styles */
+  a {
+    text-decoration: none;
+    color: #007BFF; /* Link color */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Error message styles */
+  .error {
+    color: #ff4d4d; /* Error message text color */
+    margin-top: 10px;
+  }
+  
+  /* Success message styles */
+  .success {
+    color: #4caf50; /* Success message text color */
+    margin-top: 10px;
+  }
+  
+  /* Dashboard styles */
+  .dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Dashboard background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Admin Dashboard Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #007BFF; /* Table header background color */
+    color: #fff; /* Table header text color */
+  }
+  

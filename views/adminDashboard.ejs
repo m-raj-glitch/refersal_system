@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="C:\Users\madhu\Desktop\passport-auth-login\public\main.css">
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Links</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% users.forEach(user => { %>
+        <tr>
+          <td><%= user.username %></td>
+          <td>
+            <ul>
+              <% user.links.forEach(link => { %>
+                <li><a href="<%= link.url %>"><%= link.title %></a></li>
+              <% }) %>
+            </ul>
+          </td>
+          <td>$<%= user.balance.toFixed(2) %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+  <a href="/logout">Logout</a>
+</body>
+</html>
